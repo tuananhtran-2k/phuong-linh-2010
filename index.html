@@ -1,0 +1,1770 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#f9eee5" />
+        <meta
+            name="description"
+            content="20/10 — Ngày Phụ nữ Việt Nam. Một vườn hoa và cả một trời thương, dành riêng cho em."
+        />
+        <title>Tổng đài thương Phương Linh · 20/10</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap");
+            :root {
+                --paper: #f9eee5;
+                --red: #a63048;
+                --ink: #4e343b;
+                --pink: #e6b4b5;
+                --serif: "Playfair Display", Georgia, serif;
+                --sans: "Be Vietnam Pro", sans-serif;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                margin: 0;
+                background: var(--paper);
+                color: var(--ink);
+                font: 14px var(--sans);
+                overflow-x: hidden;
+            }
+            button,
+            a {
+                -webkit-tap-highlight-color: transparent;
+            }
+            button {
+                font: inherit;
+                cursor: pointer;
+            }
+            button:focus-visible,
+            a:focus-visible {
+                outline: 3px solid #78825f;
+                outline-offset: 6px;
+            }
+            a {
+                color: inherit;
+            }
+            button {
+                color: inherit;
+            }
+            button:disabled {
+                cursor: default;
+            }
+            ::selection {
+                background: #e9b5b9;
+            }
+            body:before {
+                content: "";
+                position: fixed;
+                inset: 0;
+                z-index: 8;
+                pointer-events: none;
+                opacity: 0.12;
+                background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%236b6046' opacity='.3' filter='url(%23n)' d='M0 0h180v180H0z'/%3E%3C/svg%3E");
+            }
+            header {
+                max-width: 1400px;
+                margin: auto;
+                padding: 25px 6%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #a6304825;
+            }
+            .brand {
+                font: italic 25px var(--serif);
+                text-decoration: none;
+            }
+            .brand b {
+                color: var(--red);
+                font-weight: 500;
+            }
+            .edition,
+            .eyebrow,
+            .kicker {
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 2.4px;
+            }
+            .controls {
+                display: flex;
+                gap: 14px;
+                align-items: center;
+            }
+            .motion {
+                background: transparent;
+                border: 1px solid #bfa1a3;
+                border-radius: 30px;
+                padding: 9px 13px;
+                font-size: 10px;
+            }
+            .hero {
+                max-width: 1400px;
+                margin: auto;
+                min-height: 750px;
+                display: grid;
+                grid-template-columns: 1.1fr 1fr;
+                align-items: center;
+                padding: 65px 6% 80px;
+                gap: 35px;
+            }
+            .eyebrow {
+                color: var(--red);
+                line-height: 1.8;
+            }
+            .hero h1 {
+                font: 500 clamp(60px, 6.8vw, 100px)/1.09 var(--serif);
+                letter-spacing: -3px;
+                margin: 25px 0;
+            }
+            .hero h1 em {
+                color: var(--red);
+                font-weight: 500;
+            }
+            .hero h1 span {
+                display: block;
+            }
+            .intro {
+                max-width: 360px;
+                line-height: 1.95;
+                color: #886d70;
+                font-size: 13px;
+            }
+            .primary {
+                display: inline-flex;
+                gap: 30px;
+                align-items: center;
+                border: 0;
+                background: var(--red);
+                color: #fff6ed;
+                padding: 18px 24px;
+                border-radius: 40px;
+                margin-top: 20px;
+                transition:
+                    transform 0.25s,
+                    box-shadow 0.25s;
+                text-decoration: none;
+                font-size: 12px;
+            }
+            .primary:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 25px #a6304826;
+            }
+            .aside-note {
+                font: italic 16px var(--serif);
+                margin-top: 23px;
+                color: #977b7e;
+            }
+            .stage {
+                position: relative;
+                text-align: center;
+                min-width: 0;
+            }
+            .arch {
+                position: absolute;
+                inset: 0 5% 15px;
+                background: #edd4cb;
+                border-radius: 48% 48% 45% 45%;
+                transform: rotate(7deg);
+            }
+            .arch:before {
+                content: "";
+                position: absolute;
+                inset: 14px;
+                border: 1px solid #cba19e;
+                border-radius: inherit;
+            }
+            .flower-button {
+                display: block;
+                position: relative;
+                width: 100%;
+                padding: 0;
+                border: 0;
+                background: none;
+            }
+            .bouquet {
+                width: 100%;
+                height: 520px;
+                filter: drop-shadow(0 18px 13px #78515122);
+                animation: sway 6s ease-in-out infinite;
+                transform-origin: 50% 90%;
+            }
+            .flower-button:hover .bouquet {
+                filter: drop-shadow(0 20px 18px #a6304844);
+            }
+            .bloom {
+                transform-box: fill-box;
+                transform-origin: center;
+                animation: flower-in 1.1s both;
+            }
+            .bloom:nth-of-type(2n) {
+                animation-delay: 0.2s;
+            }
+            .bloom:nth-of-type(3n) {
+                animation-delay: 0.45s;
+            }
+            .stage.bloom-again .bloom {
+                animation: rebloom 0.9s both;
+            }
+            .stamp {
+                position: absolute;
+                right: 0;
+                top: 12px;
+                width: 106px;
+                height: 106px;
+                border: 1px solid var(--red);
+                outline: 1px dashed var(--red);
+                outline-offset: 5px;
+                border-radius: 50%;
+                background: var(--paper);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transform: rotate(12deg);
+                color: var(--red);
+                pointer-events: none;
+                animation: float 5s ease-in-out infinite;
+            }
+            .stamp b {
+                font: 500 34px var(--serif);
+            }
+            .stamp span {
+                font-size: 8px;
+                letter-spacing: 1px;
+            }
+            .floating-note {
+                position: absolute;
+                left: -20px;
+                top: 95px;
+                font: italic 19px/1.5 var(--serif);
+                transform: rotate(-12deg);
+                pointer-events: none;
+            }
+            .flower-note {
+                position: relative;
+                font: italic 16px var(--serif);
+                min-height: 25px;
+            }
+            .spark {
+                position: absolute;
+                font-size: 32px;
+                color: var(--red);
+                animation: twinkle 3s ease-in-out infinite;
+                pointer-events: none;
+            }
+            .s1 {
+                top: 48%;
+                right: 0;
+            }
+            .s2 {
+                top: 4%;
+                left: 20%;
+                animation-delay: 1s;
+            }
+            .s3 {
+                bottom: 18%;
+                left: 3%;
+                font-size: 20px;
+                animation-delay: 2s;
+            }
+            .ribbon {
+                overflow: hidden;
+                border-top: 1px solid #a6304835;
+                border-bottom: 1px solid #a6304835;
+                background: #f2dfd7;
+                padding: 20px 0;
+                transform: rotate(-1.5deg);
+                width: 100%;
+            }
+            .ribbon-track {
+                display: flex;
+                width: max-content;
+                animation: marquee 35s linear infinite;
+            }
+            .ribbon-track span {
+                white-space: nowrap;
+                padding: 0 30px;
+                font: italic 22px var(--serif);
+                color: var(--red);
+            }
+            .section {
+                max-width: 1150px;
+                padding: 100px 6%;
+                margin: auto;
+            }
+            .section-head {
+                text-align: center;
+            }
+            .kicker {
+                color: var(--red);
+            }
+            h2 {
+                font: 500 clamp(33px, 4.2vw, 52px)/1.25 var(--serif);
+                margin: 18px 0;
+            }
+            h2 em {
+                color: var(--red);
+                font-weight: 500;
+            }
+            .copy {
+                font-size: 13px;
+                color: #886d70;
+                line-height: 1.9;
+            }
+            .reasons {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 26px;
+                margin-top: 45px;
+            }
+            .reason {
+                padding: 30px 25px;
+                background: #fff8ef;
+                border: 1px solid #dcc2b6;
+                box-shadow: 4px 7px 0 #e7d3c6;
+                transform: rotate(-2deg);
+                transition: transform 0.3s;
+            }
+            .reason:nth-child(2) {
+                transform: rotate(2deg);
+                background: #ecdacb;
+            }
+            .reason:nth-child(3) {
+                transform: rotate(-1deg);
+                background: #e6e8d6;
+            }
+            .reason:hover {
+                transform: translateY(-9px) rotate(0);
+            }
+            .reason-icon {
+                font: 40px var(--serif);
+                color: var(--red);
+            }
+            .reason h3 {
+                font: 500 26px var(--serif);
+                margin: 20px 0 14px;
+            }
+            .reason p {
+                font-size: 12px;
+                line-height: 1.9;
+                color: #7a6464;
+            }
+            .letter-section {
+                background: #ead9cf;
+                position: relative;
+                padding: 75px 6%;
+                text-align: center;
+                border-top: 1px solid #ddc4b7;
+                border-bottom: 1px solid #ddc4b7;
+            }
+            .envelope {
+                display: block;
+                width: min(430px, 90%);
+                height: 245px;
+                position: relative;
+                margin: 45px auto 25px;
+                background: #dfbba6;
+                border: 1px solid #c99b88;
+                box-shadow: 0 20px 35px #7041371a;
+                isolation: isolate;
+                transition: transform 0.4s;
+                perspective: 800px;
+            }
+            .envelope:hover {
+                transform: translateY(-7px) rotate(-2deg);
+            }
+            .envelope:before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: #eed0ba;
+                clip-path: polygon(0 0, 100% 0, 50% 65%);
+                z-index: 3;
+                transform-origin: top;
+                transition:
+                    transform 0.65s,
+                    z-index 0s 0.3s;
+            }
+            .envelope:after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: #e6bfa8;
+                clip-path: polygon(0 0, 50% 62%, 100% 0, 100% 100%, 0 100%);
+                z-index: 2;
+            }
+            .mini-letter {
+                position: absolute;
+                left: 8%;
+                top: 12%;
+                width: 84%;
+                height: 80%;
+                background: #fff6e8;
+                padding: 30px 12px;
+                font: italic 25px var(--serif);
+                transition: transform 0.6s 0.15s;
+                z-index: 1;
+            }
+            .envelope.opening:before {
+                transform: rotateX(180deg);
+                z-index: 0;
+            }
+            .envelope.opening .mini-letter {
+                transform: translateY(-75px);
+            }
+            .seal {
+                position: absolute;
+                left: calc(50% - 26px);
+                top: 110px;
+                z-index: 4;
+                border-radius: 50%;
+                width: 52px;
+                height: 52px;
+                background: var(--red);
+                color: #fce7d1;
+                display: grid;
+                place-items: center;
+                font-size: 22px;
+                box-shadow: 0 4px 0 #842b40;
+                animation: heartbeat 2.5s ease-in-out infinite;
+                transition: opacity 0.2s;
+            }
+            .opening .seal {
+                opacity: 0;
+            }
+            .envelope-label {
+                position: absolute;
+                bottom: 25px;
+                left: 0;
+                right: 0;
+                z-index: 3;
+                font: italic 16px var(--serif);
+            }
+            .hint {
+                font-size: 10px;
+                letter-spacing: 1px;
+                color: #906f6b;
+            }
+            .hug-section {
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+                padding: 85px 6% 75px;
+            }
+            .big-heart {
+                font-size: 75px;
+                color: var(--red);
+                display: inline-block;
+                animation: heartbeat 2.5s ease-in-out infinite;
+            }
+            .hug-counter {
+                font-size: 10px;
+                letter-spacing: 2px;
+                color: #99767a;
+                margin-top: 25px;
+            }
+            .love-result {
+                min-height: 48px;
+                font: italic 21px/1.6 var(--serif);
+                color: var(--red);
+                margin: 22px auto;
+                max-width: 450px;
+            }
+            footer {
+                margin: 0 6%;
+                padding: 25px 0;
+                border-top: 1px solid #d8bdba;
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                font-size: 10px;
+                color: #977c7e;
+            }
+            .gate[hidden],
+            .modal[hidden] {
+                display: none;
+            }
+            .gate {
+                position: fixed;
+                inset: 0;
+                z-index: 40;
+                background: #f9eee5;
+                display: grid;
+                place-items: center;
+                text-align: center;
+                padding: 25px;
+                transition:
+                    opacity 0.65s,
+                    transform 0.65s;
+            }
+            .gate.leaving {
+                opacity: 0;
+                transform: scale(1.06);
+                pointer-events: none;
+            }
+            .gate-inner {
+                max-width: 520px;
+            }
+            .gate h2 {
+                font-size: clamp(40px, 8vw, 65px);
+                margin: 25px 0;
+            }
+            .gate-flower {
+                font-size: 90px;
+                line-height: 1;
+                color: var(--red);
+                display: block;
+                animation: spin 18s linear infinite;
+            }
+            .gate .primary {
+                margin-top: 20px;
+            }
+            .gate .copy {
+                margin-top: 20px;
+            }
+            .modal {
+                position: fixed;
+                inset: 0;
+                z-index: 30;
+                background: #3e252b80;
+                padding: 20px;
+                display: grid;
+                place-items: center;
+                -webkit-backdrop-filter: blur(8px);
+                backdrop-filter: blur(8px);
+            }
+            .letter {
+                position: relative;
+                background: #fff7e9;
+                border: 1px solid #dac1ad;
+                max-width: 580px;
+                width: 100%;
+                max-height: 88vh;
+                max-height: 88dvh;
+                overflow: auto;
+                padding: 45px;
+                box-shadow: 0 30px 80px #2f182b40;
+                animation: letter-in 0.6s both;
+                overscroll-behavior: contain;
+            }
+            .letter h2 {
+                color: var(--red);
+                font-size: 38px;
+            }
+            .letter p {
+                font-size: 13px;
+                line-height: 2;
+                color: #775c5e;
+                animation: rise 0.7s both;
+            }
+            .letter p:nth-of-type(2) {
+                animation-delay: 0.15s;
+            }
+            .letter p:nth-of-type(3) {
+                animation-delay: 0.3s;
+            }
+            .letter p:nth-of-type(4) {
+                animation-delay: 0.45s;
+            }
+            .signature {
+                text-align: right;
+                font: italic 23px var(--serif) !important;
+                color: var(--red) !important;
+            }
+            .close {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                width: 44px;
+                height: 44px;
+                background: none;
+                border: 0;
+                font-size: 28px;
+            }
+            .fx {
+                position: fixed;
+                pointer-events: none;
+                z-index: 35;
+                color: var(--red);
+                animation: particle 2.4s ease-out both;
+                will-change: transform, opacity;
+            }
+            .ambient {
+                position: fixed;
+                inset: 0;
+                pointer-events: none;
+                z-index: 0;
+                overflow: hidden;
+            }
+            .ambient i {
+                position: absolute;
+                top: -40px;
+                color: #b9717a;
+                font-style: normal;
+                font-size: 14px;
+                opacity: 0;
+                animation: drift 16s linear infinite;
+            }
+            header,
+            main,
+            footer {
+                position: relative;
+                z-index: 1;
+            }
+            .js .reveal {
+                opacity: 0;
+                transform: translateY(30px);
+                transition:
+                    opacity 0.8s,
+                    transform 0.8s;
+            }
+            .js .reveal.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .entered .hero-copy > * {
+                animation: rise 0.9s both;
+            }
+            .entered .hero-copy h1 {
+                animation-delay: 0.1s;
+            }
+            .entered .hero-copy .intro {
+                animation-delay: 0.25s;
+            }
+            .entered .hero-copy .primary {
+                animation-delay: 0.4s;
+            }
+            .entered .hero-copy .aside-note {
+                animation-delay: 0.55s;
+            }
+            .backgrounded *,
+            .backgrounded *:before,
+            .backgrounded *:after,
+            .paused *,
+            .paused *:before,
+            .paused *:after {
+                animation-play-state: paused !important;
+            }
+            .paused *,
+            .paused *:before,
+            .paused *:after {
+                animation: none !important;
+                transition: none !important;
+            }
+            .paused .reveal {
+                opacity: 1;
+                transform: none;
+            }
+            .paused .fx {
+                display: none;
+            }
+            @keyframes sway {
+                0%,
+                100% {
+                    transform: rotate(-5deg);
+                }
+                50% {
+                    transform: rotate(3deg);
+                }
+            }
+            @keyframes float {
+                0%,
+                100% {
+                    transform: translateY(0) rotate(12deg);
+                }
+                50% {
+                    transform: translateY(-12px) rotate(7deg);
+                }
+            }
+            @keyframes twinkle {
+                0%,
+                100% {
+                    opacity: 0.3;
+                    transform: scale(0.7) rotate(0);
+                }
+                50% {
+                    opacity: 1;
+                    transform: scale(1.1) rotate(30deg);
+                }
+            }
+            @keyframes flower-in {
+                from {
+                    opacity: 0;
+                    scale: 0.1;
+                }
+                to {
+                    opacity: 1;
+                    scale: 1;
+                }
+            }
+            @keyframes rebloom {
+                0% {
+                    opacity: 0.3;
+                    scale: 0.5;
+                }
+                65% {
+                    opacity: 1;
+                    scale: 1.15;
+                }
+                100% {
+                    scale: 1;
+                }
+            }
+            @keyframes marquee {
+                to {
+                    transform: translateX(-50%);
+                }
+            }
+            @keyframes heartbeat {
+                0%,
+                40%,
+                80%,
+                100% {
+                    transform: scale(1);
+                }
+                20%,
+                60% {
+                    transform: scale(1.12);
+                }
+            }
+            @keyframes spin {
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes rise {
+                from {
+                    opacity: 0;
+                    transform: translateY(24px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            @keyframes letter-in {
+                from {
+                    opacity: 0;
+                    transform: translateY(60px) rotate(-4deg) scale(0.94);
+                }
+                to {
+                    opacity: 1;
+                    transform: none;
+                }
+            }
+            @keyframes particle {
+                from {
+                    opacity: 1;
+                    transform: translate(0, 0) scale(0.4) rotate(0);
+                }
+                to {
+                    opacity: 0;
+                    transform: translate(var(--dx), var(--dy)) scale(1.2)
+                        rotate(var(--rot));
+                }
+            }
+            @keyframes drift {
+                0% {
+                    opacity: 0;
+                    transform: translate(0, -20px) rotate(0);
+                }
+                10%,
+                80% {
+                    opacity: 0.3;
+                }
+                100% {
+                    opacity: 0;
+                    transform: translate(70px, 105vh) rotate(240deg);
+                }
+            }
+            @media (min-width: 1500px) {
+                .hero {
+                    min-height: 800px;
+                }
+            }
+            @media (max-width: 760px) {
+                header {
+                    padding: 20px 6%;
+                }
+                .edition {
+                    display: none;
+                }
+                .brand {
+                    font-size: 23px;
+                }
+                .motion {
+                    font-size: 9px;
+                }
+                .hero {
+                    grid-template-columns: 1fr;
+                    padding-top: 45px;
+                    gap: 45px;
+                    min-height: 0;
+                }
+                .hero-copy {
+                    text-align: center;
+                }
+                .hero h1 {
+                    font-size: clamp(47px, 12vw, 76px);
+                    letter-spacing: -2px;
+                }
+                .intro {
+                    margin: auto;
+                    font-size: 12px;
+                    max-width: 330px;
+                }
+                .eyebrow {
+                    font-size: 8px;
+                    letter-spacing: 1.5px;
+                }
+                .stage {
+                    width: 100%;
+                    max-width: 430px;
+                    margin: auto;
+                }
+                .bouquet {
+                    height: auto;
+                    max-height: 470px;
+                }
+                .stamp {
+                    width: 87px;
+                    height: 87px;
+                    right: 3%;
+                }
+                .stamp b {
+                    font-size: 28px;
+                }
+                .stamp span {
+                    font-size: 6px;
+                }
+                .floating-note {
+                    font-size: 15px;
+                    left: 0;
+                    top: 75px;
+                }
+                .section {
+                    padding: 65px 7%;
+                }
+                .reasons {
+                    grid-template-columns: 1fr;
+                    gap: 26px;
+                    max-width: 420px;
+                    margin: 35px auto 0;
+                }
+                .reason {
+                    padding: 25px;
+                }
+                .reason-icon {
+                    float: right;
+                    font-size: 35px;
+                }
+                .reason h3 {
+                    margin-top: 10px;
+                }
+                .letter-section {
+                    padding: 60px 6%;
+                }
+                .envelope {
+                    height: 215px;
+                }
+                .seal {
+                    top: 95px;
+                }
+                .hug-section {
+                    padding: 60px 6%;
+                }
+                .letter {
+                    padding: 38px 25px;
+                }
+                .letter h2 {
+                    font-size: 32px;
+                }
+                footer {
+                    font-size: 9px;
+                }
+                .ribbon-track span {
+                    font-size: 18px;
+                    padding: 0 20px;
+                }
+            }
+            @media (prefers-reduced-motion: reduce) {
+                html {
+                    scroll-behavior: auto;
+                }
+                *,
+                *:before,
+                *:after {
+                    animation: none !important;
+                    transition: none !important;
+                }
+                .js .reveal {
+                    opacity: 1;
+                    transform: none;
+                }
+                .fx,
+                .ambient {
+                    display: none;
+                }
+            }
+
+            .proposal {
+                max-width: 950px;
+            }
+            .plan-label {
+                display: table;
+                margin: 25px auto 0;
+                border: 1px dashed var(--red);
+                border-radius: 8px;
+                padding: 12px 18px;
+                font-size: 12px;
+                letter-spacing: 2px;
+                color: var(--red);
+            }
+            .choice-area {
+                position: relative;
+                min-height: 260px;
+                margin: 25px auto 0;
+                max-width: 620px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                padding-top: 15px;
+            }
+            .yes {
+                margin: 0;
+                justify-content: center;
+                min-height: 55px;
+                width: 180px;
+                max-width: 100%;
+                position: relative;
+                z-index: 2;
+                transition:
+                    width 0.3s,
+                    min-height 0.3s,
+                    font-size 0.3s,
+                    background 0.3s;
+            }
+            .yes:hover {
+                transform: none;
+            }
+            .no {
+                position: absolute;
+                top: 165px;
+                left: calc(50% - 58px);
+                width: 116px;
+                height: 46px;
+                border: 1px solid #bfa1a3;
+                border-radius: 30px;
+                background: #fff6ed;
+                z-index: 3;
+                touch-action: manipulation;
+            }
+            .operator {
+                font-size: 12px;
+                line-height: 1.8;
+                min-height: 44px;
+                color: var(--red);
+            }
+            .success {
+                background: #e6e8d6;
+                border: 1px solid #bbc1a3;
+                border-radius: 14px;
+                padding: 35px 20px;
+                animation: rise 0.6s both;
+            }
+            .success h3 {
+                font: 500 32px var(--serif);
+                color: var(--red);
+            }
+            .success[hidden],
+            .choice-area[hidden] {
+                display: none;
+            }
+            .hero h1 {
+                font-size: clamp(52px, 6vw, 86px);
+            }
+            @media (max-width: 760px) {
+                .hero h1 {
+                    font-size: clamp(43px, 10.5vw, 68px);
+                }
+                .proposal h2 {
+                    font-size: 34px;
+                }
+                .success h3 {
+                    font-size: 27px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="gate" id="gate" hidden>
+            <div class="gate-inner">
+                <span class="kicker">Cuộc gọi đến từ tổng đài thương em</span
+                ><span class="gate-flower" aria-hidden="true">✿</span>
+                <h2>A lô, xin chào<br /><em>Phương Linh ạ!</em></h2>
+                <p class="copy">
+                    Thuê bao của quý khách vừa lọt vào danh sách được một anh mê
+                    hơi nhiều.
+                </p>
+                <button class="primary" id="enter">
+                    Nghe máy nè <span aria-hidden="true">♡</span>
+                </button>
+                <p class="copy">
+                    Cuộc gọi này có thể được ghi nhớ… trong tim anh.
+                </p>
+            </div>
+        </div>
+        <div class="ambient" aria-hidden="true"></div>
+        <div id="page">
+            <header>
+                <a class="brand" href="#">tổng đài <b>thương.</b></a
+                ><span class="edition">Ngày Phụ nữ Việt Nam · 20.10</span>
+                <div class="controls">
+                    <button class="motion" id="motion" aria-pressed="false">
+                        Tạm dừng hiệu ứng
+                    </button>
+                </div>
+            </header>
+            <main>
+                <section class="hero" aria-labelledby="title">
+                    <div class="hero-copy">
+                        <div class="eyebrow">
+                            20 tháng 10 · Chúc mừng Ngày Phụ nữ Việt Nam
+                        </div>
+                        <h1 id="title">
+                            <span>Phương Linh,</span><em>anh có gói</em
+                            ><br />này hời lắm.
+                        </h1>
+                        <p class="intro">
+                            Nhân ngày 20/10, tổng đài xin giới thiệu gói<br /><strong
+                                >“Có anh trọn đời” — ưu đãi riêng cho Phương
+                                Linh.</strong
+                            ><br />Cước phí: một cái gật đầu.
+                        </p>
+                        <a class="primary" href="#dang-ky"
+                            >Nghe tư vấn gói cước
+                            <span aria-hidden="true">↗</span></a
+                        >
+                    </div>
+                    <div class="stage" id="stage">
+                        <div class="arch"></div>
+                        <button
+                            class="flower-button"
+                            id="flowers"
+                            aria-label="Chạm để bó hoa nở và nhận lời thương"
+                        >
+                            <svg
+                                class="bouquet"
+                                viewBox="0 0 500 550"
+                                role="img"
+                                aria-label="Bó hoa đỏ son và hoa cúc vàng gói giấy, thắt nơ hồng"
+                            >
+                                <defs>
+                                    <g id="leaf">
+                                        <path
+                                            d="M0 0Q-60-50-15-85Q12-55 0 0"
+                                            fill="#727d4c"
+                                        />
+                                        <path
+                                            d="M0 0L-15-73"
+                                            fill="none"
+                                            stroke="#a9ad7c"
+                                        />
+                                    </g>
+                                    <g id="flower">
+                                        <path
+                                            d="M0-14C-48-65-69-14-28 7C-70 37-17 65 0 26C19 68 65 34 30 8C77-14 43-62 12-20C23-73-30-70 0-14Z"
+                                            fill="#b94436"
+                                        />
+                                        <path
+                                            d="M-7-13Q-29-35-35-13M13-9Q39-29 39-7M8 16Q29 34 36 20"
+                                            stroke="#d47758"
+                                            stroke-width="3"
+                                            fill="none"
+                                        />
+                                        <circle r="13" fill="#662f25" />
+                                        <g fill="#e3bc6a">
+                                            <circle cx="-5" cy="-4" r="3" />
+                                            <circle cx="6" cy="-2" r="2" />
+                                            <circle cy="6" r="3" />
+                                        </g>
+                                    </g>
+                                    <g id="daisy">
+                                        <g fill="#e0b958">
+                                            <ellipse cy="-22" rx="9" ry="23" />
+                                            <ellipse
+                                                cy="-22"
+                                                rx="9"
+                                                ry="23"
+                                                transform="rotate(45)"
+                                            />
+                                            <ellipse
+                                                cy="-22"
+                                                rx="9"
+                                                ry="23"
+                                                transform="rotate(90)"
+                                            />
+                                            <ellipse
+                                                cy="-22"
+                                                rx="9"
+                                                ry="23"
+                                                transform="rotate(135)"
+                                            />
+                                            <ellipse
+                                                cy="-22"
+                                                rx="9"
+                                                ry="23"
+                                                transform="rotate(180)"
+                                            />
+                                            <ellipse
+                                                cy="-22"
+                                                rx="9"
+                                                ry="23"
+                                                transform="rotate(225)"
+                                            />
+                                            <ellipse
+                                                cy="-22"
+                                                rx="9"
+                                                ry="23"
+                                                transform="rotate(270)"
+                                            />
+                                            <ellipse
+                                                cy="-22"
+                                                rx="9"
+                                                ry="23"
+                                                transform="rotate(315)"
+                                            />
+                                        </g>
+                                        <circle r="12" fill="#977543" />
+                                        <circle r="7" fill="#b08b4a" />
+                                    </g>
+                                </defs>
+                                <path
+                                    d="M125 220L258 490L385 224L290 267L225 211L185 262Z"
+                                    fill="#d1ba8f"
+                                />
+                                <g
+                                    stroke="#667044"
+                                    stroke-width="4"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M258 431L191 156M258 431L304 132M258 431L360 221M258 431L131 233M258 431L250 206"
+                                    />
+                                </g>
+                                <g>
+                                    <use
+                                        href="#leaf"
+                                        transform="translate(221 302) rotate(-51)"
+                                    />
+                                    <use
+                                        href="#leaf"
+                                        transform="translate(289 315) rotate(65)"
+                                    />
+                                    <use
+                                        href="#leaf"
+                                        transform="translate(196 244) rotate(-60)"
+                                    />
+                                    <use
+                                        href="#leaf"
+                                        transform="translate(310 237) rotate(59)"
+                                    />
+                                    <use
+                                        href="#leaf"
+                                        transform="translate(286 203) rotate(22)"
+                                    />
+                                    <use
+                                        href="#leaf"
+                                        transform="translate(163 219) rotate(-42)"
+                                    />
+                                    <use
+                                        href="#leaf"
+                                        transform="translate(244 201) rotate(-10)"
+                                    />
+                                    <use
+                                        href="#leaf"
+                                        transform="translate(342 250) rotate(75)"
+                                    />
+                                </g>
+                                <use
+                                    class="bloom"
+                                    href="#flower"
+                                    transform="translate(192 163) rotate(-20) scale(1.05)"
+                                />
+                                <use
+                                    class="bloom"
+                                    href="#flower"
+                                    transform="translate(299 151) rotate(25) scale(1.1)"
+                                />
+                                <use
+                                    class="bloom"
+                                    href="#daisy"
+                                    transform="translate(249 107) scale(.72)"
+                                />
+                                <use
+                                    class="bloom"
+                                    href="#daisy"
+                                    transform="translate(139 226) scale(.8)"
+                                />
+                                <use
+                                    class="bloom"
+                                    href="#daisy"
+                                    transform="translate(359 220) scale(.85)"
+                                />
+                                <use
+                                    class="bloom"
+                                    href="#flower"
+                                    transform="translate(253 239) scale(1.15)"
+                                />
+                                <g
+                                    stroke="#7b8356"
+                                    stroke-width="2"
+                                    fill="#f6f0d6"
+                                >
+                                    <path
+                                        d="M182 304L125 160M328 303L389 156"
+                                    />
+                                    <circle cx="126" cy="159" r="6" />
+                                    <circle cx="139" cy="178" r="5" />
+                                    <circle cx="117" cy="184" r="5" />
+                                    <circle cx="388" cy="155" r="6" />
+                                    <circle cx="377" cy="180" r="5" />
+                                    <circle cx="398" cy="179" r="5" />
+                                </g>
+                                <path
+                                    d="M119 273L249 500L302 462L214 321Z"
+                                    fill="#e8d5ae"
+                                />
+                                <path
+                                    d="M384 273L269 502L220 466L292 326Z"
+                                    fill="#f3e3c1"
+                                />
+                                <path
+                                    d="M119 273L249 500L214 321ZM384 273L269 502L292 326Z"
+                                    fill="none"
+                                    stroke="#c9b58d"
+                                    stroke-width="1.5"
+                                />
+                                <path
+                                    d="M192 391Q252 408 319 389L309 411Q252 429 202 411Z"
+                                    fill="#ae5145"
+                                />
+                                <path
+                                    d="M257 411C185 355 166 409 226 428L257 411C319 361 343 414 282 428Z"
+                                    fill="#bd6455"
+                                    stroke="#9d443a"
+                                    stroke-width="2"
+                                />
+                                <path
+                                    d="M250 418L222 478L245 469L253 481L268 419M268 418L303 463L304 446L321 450L280 414"
+                                    fill="#b6574b"
+                                />
+                                <ellipse
+                                    cx="264"
+                                    cy="414"
+                                    rx="13"
+                                    ry="11"
+                                    fill="#983d34"
+                                />
+                            </svg>
+                        </button>
+                        <div class="stamp">
+                            <span>DÀNH RIÊNG CHO EM</span><b>20/10</b
+                            ><span>VỚI TẤT CẢ YÊU THƯƠNG</span>
+                        </div>
+                        <span class="floating-note"
+                            >Hoa tặng kèm.<br />Anh cũng tặng kèm.</span
+                        ><span class="spark s1" aria-hidden="true">✧</span
+                        ><span class="spark s2" aria-hidden="true">✳</span
+                        ><span class="spark s3" aria-hidden="true">✧</span>
+                        <p class="flower-note" id="flower-note" role="status">
+                            Chạm để nhận hoa từ nhân viên tổng đài.
+                        </p>
+                    </div>
+                </section>
+                <div class="ribbon" aria-hidden="true">
+                    <div class="ribbon-track">
+                        <span>✳ Xinh theo cách của em</span
+                        ><span>♡ Được yêu mỗi ngày</span
+                        ><span>✳ 20/10 thật dịu dàng</span
+                        ><span>✳ Xinh theo cách của em</span
+                        ><span>♡ Được yêu mỗi ngày</span
+                        ><span>✳ 20/10 thật dịu dàng</span>
+                    </div>
+                </div>
+                <section class="section">
+                    <div class="section-head reveal">
+                        <span class="kicker"
+                            >01 / Quyền lợi thuê bao Phương Linh</span
+                        >
+                        <h2>
+                            Một gói đăng ký.<br /><em>Nguyên anh đi kèm.</em>
+                        </h2>
+                        <p class="copy">
+                            Không cần nhập OTP. Vì Ôm Thật Phê đã có anh lo.
+                        </p>
+                    </div>
+                    <div class="reasons">
+                        <article class="reason reveal">
+                            <span class="reason-icon" aria-hidden="true"
+                                >☀</span
+                            >
+                            <h3>Data nhớ em: ∞</h3>
+                            <p>
+                                Không giới hạn dung lượng nhớ Phương Linh. Tốc
+                                độ cao cả lúc thức lẫn lúc mơ. Đôi khi nghẽn
+                                mạng vì em xinh quá.
+                            </p>
+                        </article>
+                        <article class="reason reveal">
+                            <span class="reason-icon" aria-hidden="true"
+                                >✿</span
+                            >
+                            <h3>Hotline nghe kể.</h3>
+                            <p>
+                                Hỗ trợ chuyện vui, chuyện buồn và cả câu “hôm
+                                nay ăn gì?”. Nhân viên có thể hơi ngáo nhưng
+                                luôn nghiêm túc khi nghe em.
+                            </p>
+                        </article>
+                        <article class="reason reveal">
+                            <span class="reason-icon" aria-hidden="true"
+                                >♡</span
+                            >
+                            <h3>Ôm không giới hạn.</h3>
+                            <p>
+                                Tặng kèm một người xách đồ, nhắc em nghỉ ngơi và
+                                khen em xinh. Cước phát sinh duy nhất: càng dùng
+                                càng thương.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+                <section class="proposal section" id="dang-ky">
+                    <div class="section-head reveal">
+                        <span class="kicker"
+                            >02 / Ưu đãi độc quyền cho Phương Linh</span
+                        >
+                        <div class="plan-label">GÓI CƯỚC: BÀ CHÃ ♡</div>
+                        <h2 id="proposal-title">
+                            Bé yêu ơi,<br /><em
+                                >em đồng yêu thương anh cả đời nhé?</em
+                            >
+                        </h2>
+                        <p class="copy">
+                            Nhấn “Đồng ý” để đăng ký gói có anh trong đời.<br />Nút
+                            “Không” hơi hướng nội, thấy em là chạy. Hẹ hẹ.
+                        </p>
+                        <div class="choice-area" id="choice-area">
+                            <button class="primary yes" id="yes">
+                                Em đồng ý ♡</button
+                            ><button class="no" id="no">Không nha</button>
+                        </div>
+                        <p class="operator" id="operator" role="status">
+                            Tổng đài đang hồi hộp chờ phản hồi của quý khách…
+                        </p>
+                        <div class="success" id="success" hidden>
+                            <span class="kicker">ĐĂNG KÝ THÀNH CÔNG ✓</span>
+                            <h3>Chốt đơn bà chã Phương Linh!</h3>
+                            <a class="primary" href="#thu"
+                                >Đọc tin nhắn riêng của anh ↗</a
+                            >
+                            <p class="hint">
+                                Tổng đài đùa xíu thôi. Còn thương em là thật.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="letter-section" id="thu">
+                    <div class="reveal">
+                        <span class="kicker"
+                            >03 / Tin nhắn riêng từ nhân viên tổng đài</span
+                        >
+                        <h2>Nói hơi ngọng.<br /><em>Thương thì rất rõ.</em></h2>
+                        <p class="copy">
+                            Kịch bản tư vấn thì hơi lầy.<br />Còn lời trong thư,
+                            anh muốn tự tay viết cho Phương Linh.
+                        </p>
+                        <button
+                            class="envelope"
+                            id="envelope"
+                            aria-label="Mở thư chúc mừng ngày 20 tháng 10"
+                        >
+                            <span class="mini-letter" aria-hidden="true"
+                                >Phương Linh ơi, ♡</span
+                            ><span class="seal" aria-hidden="true">♥</span
+                            ><span class="envelope-label"
+                                >Gửi thuê bao duy nhất trong tim anh.</span
+                            >
+                        </button>
+                        <p class="hint">CHẠM NHẸ ĐỂ MỞ THƯ</p>
+                    </div>
+                </section>
+                <section class="hug-section">
+                    <div class="reveal">
+                        <span class="kicker"
+                            >04 / Trải nghiệm dịch vụ miễn phí</span
+                        ><br /><span class="big-heart" aria-hidden="true"
+                            >♡</span
+                        >
+                        <h2>Bấm phím 1 để được ôm.</h2>
+                        <p class="copy">
+                            Tổng đài hiện không bận. Nhân viên đang nhớ Phương
+                            Linh.<br />Quý khách có thể sử dụng dịch vụ nhiều
+                            lần cho đã.
+                        </p>
+                        <button class="primary" id="hug">
+                            Phím 1 · Nhận ôm <span aria-hidden="true">♡</span>
+                        </button>
+                        <p class="love-result" id="hug-result" role="status">
+                            Vòng tay đã sẵn sàng. Chờ mỗi em.
+                        </p>
+                        <p class="hug-counter" id="hug-counter">
+                            0 CÁI ÔM · THƯƠNG THÌ VÔ SỐ
+                        </p>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <span>20.10 · Ngày Phụ nữ Việt Nam</span
+                ><span>Tổng đài một nhân viên · Chỉ phục vụ Phương Linh ♡</span>
+            </footer>
+        </div>
+        <div class="modal" id="modal" hidden>
+            <section
+                class="letter"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="letter-title"
+                tabindex="-1"
+            >
+                <button class="close" id="close" aria-label="Đóng lá thư">
+                    ×</button
+                ><span class="kicker"
+                    >20 tháng 10 · Tin nhắn dành riêng cho Phương Linh</span
+                >
+                <h2 id="letter-title">Phương Linh ơi,</h2>
+                <!-- VIẾT LỜI CHÚC CỦA BẠN Ở ĐÂY. Mỗi đoạn dùng một thẻ <p>. -->
+                <div id="personal-message">
+                    <p>
+                        Xin chào em yêu của anh. Chúc em ngày 20/10 thật vui vẻ
+                        hạnh phúc vui tươi nhá. Anh gửi tới em hàng ngàn lời
+                        chúc yêu thương, hôn em từ xa phải ngoan, biết tự chăm
+                        sóc bản thân đấy. Không là "Bắt cóc" em về bên anh liền
+                        nghe chưa
+                    </p>
+                </div>
+                <!-- HẾT PHẦN LỜI CHÚC -->
+                <p class="signature">
+                    Anh — nhân viên tổng đài<br />kiêm người thương em.
+                </p>
+            </section>
+        </div>
+        <script>
+            (function () {
+                "use strict";
+                const $ = (id) => document.getElementById(id);
+                const reduced = window.matchMedia(
+                    "(prefers-reduced-motion: reduce)",
+                );
+                const page = $("page"),
+                    gate = $("gate"),
+                    modal = $("modal"),
+                    close = $("close"),
+                    envelope = $("envelope");
+                let paused = reduced.matches,
+                    hugs = 0,
+                    flowerCount = 0,
+                    previousFocus,
+                    savedY = 0,
+                    opening = false;
+                let enterTimer, letterTimer;
+                function syncMotion() {
+                    document.body.classList.toggle("paused", paused);
+                    $("motion").textContent = paused
+                        ? "Bật hiệu ứng"
+                        : "Tạm dừng hiệu ứng";
+                    $("motion").setAttribute("aria-pressed", String(paused));
+                }
+                function canAnimate() {
+                    return !paused && !reduced.matches && !document.hidden;
+                }
+                function burst(x, y, amount) {
+                    if (!canAnimate()) return;
+                    const available = Math.max(
+                        0,
+                        64 - document.querySelectorAll(".fx").length,
+                    );
+                    for (let i = 0; i < Math.min(amount, available); i++) {
+                        const el = document.createElement("span");
+                        el.className = "fx";
+                        el.textContent = i % 3 ? "♥" : "✿";
+                        el.setAttribute("aria-hidden", "true");
+                        el.style.left = x + "px";
+                        el.style.top = y + "px";
+                        el.style.fontSize = 12 + Math.random() * 16 + "px";
+                        el.style.setProperty(
+                            "--dx",
+                            (Math.random() - 0.5) * 350 + "px",
+                        );
+                        el.style.setProperty(
+                            "--dy",
+                            -70 - Math.random() * 280 + "px",
+                        );
+                        el.style.setProperty(
+                            "--rot",
+                            (Math.random() - 0.5) * 180 + "deg",
+                        );
+                        document.body.appendChild(el);
+                        setTimeout(() => el.remove(), 2500);
+                    }
+                }
+                function burstFrom(el, n) {
+                    const rect = el.getBoundingClientRect();
+                    burst(
+                        rect.left + rect.width / 2,
+                        rect.top + rect.height / 2,
+                        n,
+                    );
+                }
+                function lock() {
+                    savedY = window.scrollY;
+                    document.body.style.position = "fixed";
+                    document.body.style.top = -savedY + "px";
+                    document.body.style.width = "100%";
+                }
+                function unlock() {
+                    document.body.style.position = "";
+                    document.body.style.top = "";
+                    document.body.style.width = "";
+                    const before =
+                        document.documentElement.style.scrollBehavior;
+                    document.documentElement.style.scrollBehavior = "auto";
+                    window.scrollTo(0, savedY);
+                    document.documentElement.style.scrollBehavior = before;
+                }
+                function enter() {
+                    if (gate.classList.contains("leaving")) return;
+                    gate.classList.add("leaving");
+                    enterTimer = setTimeout(
+                        () => {
+                            gate.hidden = true;
+                            page.inert = false;
+                            unlock();
+                            document.body.classList.add("entered");
+                            $("motion").focus({ preventScroll: true });
+                            burst(
+                                window.innerWidth / 2,
+                                window.innerHeight * 0.7,
+                                32,
+                            );
+                        },
+                        canAnimate() ? 650 : 0,
+                    );
+                }
+                $("enter").addEventListener("click", enter);
+                function openLetter() {
+                    if (opening || !modal.hidden) return;
+                    opening = true;
+                    previousFocus = document.activeElement;
+                    envelope.classList.add("opening");
+                    envelope.disabled = true;
+                    letterTimer = setTimeout(
+                        () => {
+                            modal.hidden = false;
+                            page.inert = true;
+                            lock();
+                            close.focus();
+                            opening = false;
+                        },
+                        canAnimate() ? 850 : 0,
+                    );
+                }
+                function closeLetter() {
+                    modal.hidden = true;
+                    page.inert = false;
+                    unlock();
+                    envelope.classList.remove("opening");
+                    envelope.disabled = false;
+                    previousFocus.focus({ preventScroll: true });
+                }
+                envelope.addEventListener("click", openLetter);
+                close.addEventListener("click", closeLetter);
+                modal.addEventListener("click", (e) => {
+                    if (e.target === modal) closeLetter();
+                });
+                document.addEventListener("keydown", (e) => {
+                    if (!gate.hidden) {
+                        if (e.key === "Tab") {
+                            e.preventDefault();
+                            $("enter").focus();
+                        }
+                        if (e.key === "Escape") enter();
+                    } else if (!modal.hidden) {
+                        if (e.key === "Escape") closeLetter();
+                        if (e.key === "Tab") {
+                            e.preventDefault();
+                            close.focus();
+                        }
+                    }
+                });
+                const flowerMessages = [
+                    "Tổng đài vừa giao hoa cho thuê bao Phương Linh. ♡",
+                    "Hoa miễn phí. Anh tặng kèm. Deal này hời quá trời!",
+                    "Phương Linh vui lòng nhận hoa, đừng nhận anh làm anh trai nha.",
+                    "Thông báo: nhân viên tổng đài đã trúng tiếng sét ái tình.",
+                ];
+                $("flowers").addEventListener("click", () => {
+                    $("flower-note").textContent =
+                        flowerMessages[flowerCount++ % flowerMessages.length];
+                    burstFrom($("flowers"), 20);
+                    $("stage").classList.remove("bloom-again");
+                    requestAnimationFrame(() =>
+                        requestAnimationFrame(() =>
+                            $("stage").classList.add("bloom-again"),
+                        ),
+                    );
+                });
+                const messages = [
+                    "Ôm một cái thật lâu. Hôm nay em vất vả rồi. ♡",
+                    "Thêm một cái. Chỗ này lúc nào cũng dành cho em.",
+                    "Được ôm em là phần anh thích nhất trong ngày.",
+                    "Nếu hôm nay hơi buồn, cứ tựa vào anh một chút.",
+                    "Ăm chã húi! Thương bà chã nhiều lắm.",
+                ];
+                $("hug").addEventListener("click", () => {
+                    $("hug-result").textContent =
+                        messages[hugs % messages.length];
+                    hugs++;
+                    $("hug-counter").textContent =
+                        hugs + " CÁI ÔM · THƯƠNG THÌ VÔ SỐ";
+                    burstFrom($("hug"), 28);
+                });
+
+                const noButton = $("no"),
+                    yesButton = $("yes"),
+                    arena = $("choice-area");
+                let dodges = 0,
+                    accepted = false,
+                    lastDodge = 0;
+                const operatorLines = [
+                    "Thuê bao vừa né hạnh phúc. Tổng đài xin phép tư vấn lại.",
+                    "Phương Linh ơi, nút Không đang đi công tác rồi.",
+                    "Ưu đãi tăng: nút Đồng ý được nâng cấp dung lượng!",
+                    "Bộ phận kỹ thuật xác nhận: anh mê em quá mức cho phép.",
+                    "Quý khách bấm nhầm hả? Nút hồng ngay đây nè.",
+                ];
+                function dodge(event) {
+                    if (accepted) return;
+                    if (
+                        event.type === "pointerenter" &&
+                        event.pointerType !== "mouse"
+                    )
+                        return;
+                    if (event.cancelable) event.preventDefault();
+                    const now = Date.now();
+                    if (now - lastDodge < 220) return;
+                    lastDodge = now;
+                    dodges++;
+                    const w = arena.clientWidth;
+                    yesButton.style.width =
+                        Math.min(w, 180 + dodges * 35) + "px";
+                    yesButton.style.minHeight =
+                        Math.min(150, 55 + dodges * 10) + "px";
+                    yesButton.style.fontSize =
+                        Math.min(27, 12 + dodges * 1.5) + "px";
+                    // The escape lane stays below the growing Yes button, inside the viewport.
+                    const maxX = Math.max(0, w - noButton.offsetWidth);
+                    const oldX = noButton.offsetLeft;
+                    const nextX =
+                        oldX > maxX / 2
+                            ? Math.random() * maxX * 0.35
+                            : maxX * (0.65 + Math.random() * 0.35);
+                    noButton.style.left = nextX + "px";
+                    noButton.style.top = 175 + Math.random() * 25 + "px";
+                    $("operator").textContent =
+                        operatorLines[(dodges - 1) % operatorLines.length];
+                }
+                noButton.addEventListener("pointerenter", dodge);
+                noButton.addEventListener("pointerdown", dodge);
+                noButton.addEventListener("click", dodge);
+                yesButton.addEventListener("click", () => {
+                    if (accepted) return;
+                    accepted = true;
+                    burstFrom(yesButton, 42);
+                    arena.hidden = true;
+                    $("operator").textContent =
+                        "Hệ thống đã ghi nhận: Phương Linh đồng ý. Nhân viên đang vui quá, xin đừng cúp máy!";
+                    $("success").hidden = false;
+                    $("success").setAttribute("tabindex", "-1");
+                    $("success").focus({ preventScroll: true });
+                });
+                window.addEventListener("resize", () => {
+                    if (dodges && !accepted) {
+                        yesButton.style.width =
+                            Math.min(arena.clientWidth, 180 + dodges * 35) +
+                            "px";
+                        noButton.style.left =
+                            Math.min(
+                                noButton.offsetLeft,
+                                Math.max(
+                                    0,
+                                    arena.clientWidth - noButton.offsetWidth,
+                                ),
+                            ) + "px";
+                    }
+                });
+                $("motion").addEventListener("click", () => {
+                    paused = !paused;
+                    syncMotion();
+                });
+                if (reduced.addEventListener)
+                    reduced.addEventListener("change", () => {
+                        paused = reduced.matches;
+                        syncMotion();
+                    });
+                document.addEventListener("visibilitychange", () =>
+                    document.body.classList.toggle(
+                        "backgrounded",
+                        document.hidden,
+                    ),
+                );
+                const ambient = document.querySelector(".ambient");
+                for (let i = 0; i < 9; i++) {
+                    const petal = document.createElement("i");
+                    petal.textContent = i % 2 ? "✿" : "♡";
+                    petal.style.left = i * 11 + "%";
+                    petal.style.animationDelay = -i * 1.8 + "s";
+                    petal.style.animationDuration = 15 + (i % 4) * 2 + "s";
+                    ambient.appendChild(petal);
+                }
+                if ("IntersectionObserver" in window) {
+                    document.documentElement.classList.add("js");
+                    const observer = new IntersectionObserver(
+                        (entries) =>
+                            entries.forEach((entry) => {
+                                if (entry.isIntersecting) {
+                                    entry.target.classList.add("visible");
+                                    observer.unobserve(entry.target);
+                                }
+                            }),
+                        { threshold: 0.12 },
+                    );
+                    document
+                        .querySelectorAll(".reveal")
+                        .forEach((el) => observer.observe(el));
+                }
+                syncMotion();
+                gate.hidden = false;
+                page.inert = true;
+                lock();
+                $("enter").focus();
+            })();
+        </script>
+    </body>
+</html>
